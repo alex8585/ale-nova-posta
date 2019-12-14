@@ -1,0 +1,82 @@
+/* autocomplete stile fix start*/
+#billing_city_field,
+#billing_novaposhta_otdelenie_field {
+     position: relative;
+ }
+
+.ui-autocomplete.ui-widget.ui-widget-content {
+    padding: 0 0px !important;
+    height:auto; 
+}
+
+.ui-autocomplete .ui-menu-item .ui-menu-item-wrapper {
+    position: relative;
+    padding: 3px 1em 3px .4em;
+}
+
+.ui-autocomplete.ui-widget.ui-widget-content:after {
+	display: none;
+}
+
+/* autocomplete stile fix end*/
+
+
+ .np-city-msg {
+    color:#0c5460;
+    background-color:#d1ecf1;
+    border-color:#bee5eb;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid
+    transparent;
+    border-radius: 3px;
+    display: none;
+}
+
+.lds-facebook {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #E64927;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .lds-facebook {
+        top: 15px;
+    }
+  }
